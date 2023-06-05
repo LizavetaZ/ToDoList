@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDoList</title>
+    <meta name="title" content="ToDoList">
+    <meta name="description" content="My daily routine">
+    <!-- Open Graph / Facebook -->
+    <!-- <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Мое портфолио">
+    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <!-- <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Мое портфолио">
+    <meta property="twitter:description"
+        content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"> -->
+
+    <!-- Favicon  -->
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">-->
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header__title">
+                <h1 class="title title_fz32 header__title-first">ToDo</h1>
+                <h1 class="title title_fz32 header__title-second">What Can I Do Today</h1>
+                <h1 class="title title_fz32 header__title-third">27.02.2023</h1>
+            </div>
+        </div>
+    </section>
+    <section class="options">
+        <div class="container">
+            <div class="options__wrapper">
+                <div class="options__wrapper-make width">
+                    <div class="options__wrapper-headfirst">
+                        <h2 class="title title_fz14 option__title">Make ToDo</h2>
+                        <img class="options__link-plus toggle-popup" src="./icons/plus.png" alt="plus_btn" height="20px" width="20px">
+                        <img class="options__link-trash-do" src="./icons/trashbox.png" alt="trash_btn" height="20px" width="20px">
+                    </div>
+                    <div class="options__wrapper-headsecond">
+                        <h2 class="title title_fz16 options__subtitle">Total:</h2>
+                        <div class="totalCountToDo">
+                        </div>
+                    </div>
+                    <div class="make">
+                        
+                    </div>
+                </div>
+                <div class="options__wrapper-prog width">
+                    <div class="options__wrapper-headfirst">
+                        <h2 class="title title_fz14 option__title">In Progress</h2>
+                        <img class="options__link-trash-prog" src="./icons/trashbox.png" alt="trash_btn" height="20px" width="20px">
+                    </div>
+                    <div class="options__wrapper-headsecond">
+                        <h2 class="title title_fz16 options__subtitle">Total:</h2>
+                        <div class="totalCountInProg">
+
+                        </div>
+                    </div>
+                    <div class="makeProgress">
+
+                    </div>
+                </div>
+                <div class="options__wrapper-done width">
+                    <div class="options__wrapper-headfirst">
+                        <h2 class="title title_fz14 option__title">Done</h2>
+                        <img class="options__link-trash-done" src="./icons/trashbox.png" alt="trash_btn" height="20px" width="20px">
+                    </div>
+                    <div class="options__wrapper-headsecond">
+                        <h2 class="title title_fz16 options__subtitle">Total:</h2>
+                        <div class="totalCountDone">
+
+                        </div>
+                    </div>
+                    <div class="finish">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="fill-background">
+        <section class="fill">
+            <div class="container">
+                <div class="fill__header">
+                    <div class="title title_fz16 fill__text">
+                        Fill in all required fields
+                    </div>
+                    <img class="options__link-exit" src="./icons/close.png" alt="close_btn" height="20px" width="20px">
+                    <div class="fill__divider">
+                        <hr>
+                    </div>
+                </div>
+                <form action="#" id = "fill-form" class="fill__form">
+                    <div class="valid-text"></div>
+                    <div class="fill__input">
+                        <div class="title title_fz16 fill__text">
+                            Title:
+                        </div>
+                        <input name="text" id="text-first"   placeholder="Enter title for your note">
+                    </div>
+                    <div class="fill__input">
+                        <div class="title title_fz16 fill__text">
+                            Description:
+                        </div>
+                        <input name="text" id="text-second" type="text" placeholder="Enter description for your note">
+                    </div>
+                    <div class="fill__input">
+                        <div class="title title_fz16 fill__text">
+                            Author:
+                        </div>
+                        <input name="text" id="text-third" type="text" placeholder="Author">
+                    </div>
+                    <div class="fill__btn">
+                        <button id="fill__btn-create">Create</button>
+                    </div>
+                    
+                </form>
+                <div class="fill__btn">
+                    <button class="options__link-exit" id="fill__btn-cancel">Cancel</button>
+                </div>
+            </div>
+           
+            </div>
+    </div>
+    </section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

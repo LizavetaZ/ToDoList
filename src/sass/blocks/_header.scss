@@ -1,0 +1,28 @@
+.header {
+    min-height: 100px;
+    position:relative;
+    padding-top: 5px;
+    &__title {
+        display: grid;
+        grid-template-rows: 80px;
+        grid-template-columns: repeat(3, 400px);
+        background-color:white;
+        box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        text-align: center;
+        font-size: 26px;
+        padding-top: 10px;
+        &-first{
+            color: rgb(229, 166, 30);
+            font-weight:normal;
+        }
+        &-second{
+            color:rgb(33, 179, 242);
+            font-weight:normal;
+        }
+        &-third {
+            color:#000;
+            font-weight:normal;
+        }
+
+    }
+}
